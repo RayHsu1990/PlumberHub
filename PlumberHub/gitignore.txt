@@ -1,0 +1,60 @@
+## xcodeproj & workspace
+*.xcodeproj
+*.xcodeproj/*
+*.xcworkspace
+*.xcworkspace/*
+
+## Fastlane
+*.mobileprovision
+*.cer
+*.ipa
+*.certSigningRequest
+*.dSYM.zip
+fastlane/report.xml
+fastlane/README.md
+fastlane/test_output/
+TODO.md
+default.profraw
+
+## Build generated
+build/
+release/
+DerivedData
+tmp.txt
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+
+## Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+*.p12
+*.dropbox
+.DS_Store
+rvm.env
+xcov_output
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+culprits.txt
+Preview.html
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+Pods/
+
