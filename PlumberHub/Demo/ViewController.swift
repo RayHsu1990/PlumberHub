@@ -10,7 +10,8 @@ import GoogleMobileAds
 
 class ViewController: UIViewController {
     private var adId: String {
-        "ca-app-pub-2674122388531161/8214736945"
+        // test id
+        "ca-app-pub-3940256099942544/2934735716"
     }
     
     private lazy var banner: GADBannerView = {
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
             banner.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             banner.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             banner.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            banner.heightAnchor.constraint(equalToConstant: 50)
+            banner.heightAnchor.constraint(equalToConstant: 500 )
         ])
 
     }
