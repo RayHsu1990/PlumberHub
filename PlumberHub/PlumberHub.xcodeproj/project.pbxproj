@@ -13,9 +13,13 @@
 		FB546BBD2A2634CF00333916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB546BBB2A2634CF00333916 /* Main.storyboard */; };
 		FB546BBF2A2634D000333916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB546BBE2A2634D000333916 /* Assets.xcassets */; };
 		FB546BC22A2634D000333916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB546BC02A2634D000333916 /* LaunchScreen.storyboard */; };
+		FFED62D658F779C5360B7BC7 /* libPods-PlumberHub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD434D165A021DB2892329F7 /* libPods-PlumberHub.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50D7538A4687DA0ACBB3C730 /* Pods-PlumberHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlumberHub.release.xcconfig"; path = "Target Support Files/Pods-PlumberHub/Pods-PlumberHub.release.xcconfig"; sourceTree = "<group>"; };
+		CD434D165A021DB2892329F7 /* libPods-PlumberHub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlumberHub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F58496A1A65318B9ED8135 /* Pods-PlumberHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlumberHub.debug.xcconfig"; path = "Target Support Files/Pods-PlumberHub/Pods-PlumberHub.debug.xcconfig"; sourceTree = "<group>"; };
 		FB546BB22A2634CF00333916 /* PlumberHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlumberHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB546BB52A2634CF00333916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB546BB72A2634CF00333916 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFED62D658F779C5360B7BC7 /* libPods-PlumberHub.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D803D0B0C3F5CFB4B3A7C85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3F58496A1A65318B9ED8135 /* Pods-PlumberHub.debug.xcconfig */,
+				50D7538A4687DA0ACBB3C730 /* Pods-PlumberHub.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A6043C182BA2CE70A8950DEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD434D165A021DB2892329F7 /* libPods-PlumberHub.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB546BA92A2634CF00333916 = {
 			isa = PBXGroup;
 			children = (
 				FB546BB42A2634CF00333916 /* PlumberHub */,
 				FB546BB32A2634CF00333916 /* Products */,
+				6D803D0B0C3F5CFB4B3A7C85 /* Pods */,
+				A6043C182BA2CE70A8950DEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB546BC62A2634D000333916 /* Build configuration list for PBXNativeTarget "PlumberHub" */;
 			buildPhases = (
+				3108E2AD86E5C67943F76869 /* [CP] Check Pods Manifest.lock */,
 				FB546BAE2A2634CF00333916 /* Sources */,
 				FB546BAF2A2634CF00333916 /* Frameworks */,
 				FB546BB02A2634CF00333916 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3108E2AD86E5C67943F76869 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlumberHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB546BAE2A2634CF00333916 /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		FB546BC72A2634D000333916 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F58496A1A65318B9ED8135 /* Pods-PlumberHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +362,7 @@
 		};
 		FB546BC82A2634D000333916 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50D7538A4687DA0ACBB3C730 /* Pods-PlumberHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
