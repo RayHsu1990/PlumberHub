@@ -9,9 +9,13 @@ import UIKit
 import GoogleMobileAds
 
 class ViewController: UIViewController {
+    private var adId: String {
+        "ca-app-pub-2674122388531161/8214736945"
+    }
+    
     private lazy var banner: GADBannerView = {
         let banner = GADBannerView()
-        banner.adUnitID = "ca-app-pub-2674122388531161/4792714297"
+        banner.adUnitID = adId
         banner.rootViewController = self
         banner.delegate = self
         banner.backgroundColor = .systemPink

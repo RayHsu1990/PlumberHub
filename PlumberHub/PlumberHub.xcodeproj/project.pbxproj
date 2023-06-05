@@ -23,6 +23,19 @@
 		FFED62D658F779C5360B7BC7 /* libPods-PlumberHub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD434D165A021DB2892329F7 /* libPods-PlumberHub.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FB3208072A2E2B34000DAD5F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		50D7538A4687DA0ACBB3C730 /* Pods-PlumberHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlumberHub.release.xcconfig"; path = "Target Support Files/Pods-PlumberHub/Pods-PlumberHub.release.xcconfig"; sourceTree = "<group>"; };
 		5F709ED3EC1D373655B79AA4 /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +178,7 @@
 				FB546BAE2A2634CF00333916 /* Sources */,
 				FB546BAF2A2634CF00333916 /* Frameworks */,
 				FB546BB02A2634CF00333916 /* Resources */,
+				FB3208072A2E2B34000DAD5F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
