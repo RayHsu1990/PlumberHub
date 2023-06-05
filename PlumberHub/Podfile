@@ -4,3 +4,7 @@
 target 'PlumberHub' do
   pod 'Google-Mobile-Ads-SDK'
 end
+
+target 'Demo' do
+  pod 'Google-Mobile-Ads-SDK'
+end
