@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0383EE17DC9090AD528F5A3B /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F709ED3EC1D373655B79AA4 /* libPods-Demo.a */; };
+		FB3C4A672A49C8F60080728E /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3C4A5F2A49C8F50080728E /* Network.framework */; };
+		FB3C4A6E2A49C8F60080728E /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C4A6D2A49C8F60080728E /* NetworkTests.swift */; };
+		FB3C4A722A49C8F60080728E /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3C4A5F2A49C8F50080728E /* Network.framework */; };
+		FB3C4A732A49C8F60080728E /* Network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB3C4A5F2A49C8F50080728E /* Network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FB3C4A7B2A49C91E0080728E /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C4A7A2A49C91E0080728E /* Client.swift */; };
+		FB3C4A7D2A49C95E0080728E /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C4A7C2A49C95E0080728E /* Session.swift */; };
+		FB3C4A7F2A49D32E0080728E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C4A7E2A49D32E0080728E /* NetworkError.swift */; };
 		FB4CEF002A2E299200382E08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4CEEFF2A2E299200382E08 /* AppDelegate.swift */; };
 		FB4CEF022A2E299200382E08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4CEF012A2E299200382E08 /* SceneDelegate.swift */; };
 		FB4CEF042A2E299200382E08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4CEF032A2E299200382E08 /* ViewController.swift */; };
@@ -23,6 +30,30 @@
 		FFED62D658F779C5360B7BC7 /* libPods-PlumberHub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD434D165A021DB2892329F7 /* libPods-PlumberHub.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FB3C4A682A49C8F60080728E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB546BAA2A2634CF00333916 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB3C4A5E2A49C8F50080728E;
+			remoteInfo = Network;
+		};
+		FB3C4A6A2A49C8F60080728E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB546BAA2A2634CF00333916 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB546BB12A2634CF00333916;
+			remoteInfo = PlumberHub;
+		};
+		FB3C4A702A49C8F60080728E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB546BAA2A2634CF00333916 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB3C4A5E2A49C8F50080728E;
+			remoteInfo = Network;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		FB3208072A2E2B34000DAD5F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -30,6 +61,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FB3C4A732A49C8F60080728E /* Network.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +75,12 @@
 		CD434D165A021DB2892329F7 /* libPods-PlumberHub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlumberHub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4CF2E552F6E4FE0B446111 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		F3F58496A1A65318B9ED8135 /* Pods-PlumberHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlumberHub.debug.xcconfig"; path = "Target Support Files/Pods-PlumberHub/Pods-PlumberHub.debug.xcconfig"; sourceTree = "<group>"; };
+		FB3C4A5F2A49C8F50080728E /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3C4A662A49C8F50080728E /* NetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3C4A6D2A49C8F60080728E /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		FB3C4A7A2A49C91E0080728E /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		FB3C4A7C2A49C95E0080728E /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		FB3C4A7E2A49D32E0080728E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		FB4CEEFD2A2E299200382E08 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4CEEFF2A2E299200382E08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB4CEF012A2E299200382E08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +100,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FB3C4A5C2A49C8F50080728E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3C4A632A49C8F50080728E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3C4A672A49C8F60080728E /* Network.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB4CEEFA2A2E299200382E08 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFED62D658F779C5360B7BC7 /* libPods-PlumberHub.a in Frameworks */,
+				FB3C4A722A49C8F60080728E /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +155,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FB3C4A602A49C8F50080728E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FB3C4A7A2A49C91E0080728E /* Client.swift */,
+				FB3C4A7C2A49C95E0080728E /* Session.swift */,
+				FB3C4A7E2A49D32E0080728E /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FB3C4A6C2A49C8F60080728E /* NetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB3C4A6D2A49C8F60080728E /* NetworkTests.swift */,
+			);
+			path = NetworkTests;
+			sourceTree = "<group>";
+		};
 		FB4CEEFE2A2E299200382E08 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +192,8 @@
 			children = (
 				FB546BB42A2634CF00333916 /* PlumberHub */,
 				FB4CEEFE2A2E299200382E08 /* Demo */,
+				FB3C4A602A49C8F50080728E /* Network */,
+				FB3C4A6C2A49C8F60080728E /* NetworkTests */,
 				FB546BB32A2634CF00333916 /* Products */,
 				6D803D0B0C3F5CFB4B3A7C85 /* Pods */,
 				A6043C182BA2CE70A8950DEE /* Frameworks */,
@@ -131,6 +205,8 @@
 			children = (
 				FB546BB22A2634CF00333916 /* PlumberHub.app */,
 				FB4CEEFD2A2E299200382E08 /* Demo.app */,
+				FB3C4A5F2A49C8F50080728E /* Network.framework */,
+				FB3C4A662A49C8F50080728E /* NetworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,7 +227,54 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		FB3C4A5A2A49C8F50080728E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		FB3C4A5E2A49C8F50080728E /* Network */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB3C4A782A49C8F60080728E /* Build configuration list for PBXNativeTarget "Network" */;
+			buildPhases = (
+				FB3C4A5A2A49C8F50080728E /* Headers */,
+				FB3C4A5B2A49C8F50080728E /* Sources */,
+				FB3C4A5C2A49C8F50080728E /* Frameworks */,
+				FB3C4A5D2A49C8F50080728E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Network;
+			productName = Network;
+			productReference = FB3C4A5F2A49C8F50080728E /* Network.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FB3C4A652A49C8F50080728E /* NetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB3C4A792A49C8F60080728E /* Build configuration list for PBXNativeTarget "NetworkTests" */;
+			buildPhases = (
+				FB3C4A622A49C8F50080728E /* Sources */,
+				FB3C4A632A49C8F50080728E /* Frameworks */,
+				FB3C4A642A49C8F50080728E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB3C4A692A49C8F60080728E /* PBXTargetDependency */,
+				FB3C4A6B2A49C8F60080728E /* PBXTargetDependency */,
+			);
+			name = NetworkTests;
+			productName = NetworkTests;
+			productReference = FB3C4A662A49C8F50080728E /* NetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FB4CEEFC2A2E299200382E08 /* Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB4CEF102A2E299400382E08 /* Build configuration list for PBXNativeTarget "Demo" */;
@@ -183,6 +306,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				FB3C4A712A49C8F60080728E /* PBXTargetDependency */,
 			);
 			name = PlumberHub;
 			productName = PlumberHub;
@@ -199,6 +323,14 @@
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					FB3C4A5E2A49C8F50080728E = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+					FB3C4A652A49C8F50080728E = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = FB546BB12A2634CF00333916;
+					};
 					FB4CEEFC2A2E299200382E08 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -222,11 +354,27 @@
 			targets = (
 				FB546BB12A2634CF00333916 /* PlumberHub */,
 				FB4CEEFC2A2E299200382E08 /* Demo */,
+				FB3C4A5E2A49C8F50080728E /* Network */,
+				FB3C4A652A49C8F50080728E /* NetworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FB3C4A5D2A49C8F50080728E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3C4A642A49C8F50080728E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB4CEEFB2A2E299200382E08 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,6 +445,24 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FB3C4A5B2A49C8F50080728E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3C4A7F2A49D32E0080728E /* NetworkError.swift in Sources */,
+				FB3C4A7D2A49C95E0080728E /* Session.swift in Sources */,
+				FB3C4A7B2A49C91E0080728E /* Client.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3C4A622A49C8F50080728E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3C4A6E2A49C8F60080728E /* NetworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB4CEEF92A2E299200382E08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,6 +484,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB3C4A692A49C8F60080728E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB3C4A5E2A49C8F50080728E /* Network */;
+			targetProxy = FB3C4A682A49C8F60080728E /* PBXContainerItemProxy */;
+		};
+		FB3C4A6B2A49C8F60080728E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB546BB12A2634CF00333916 /* PlumberHub */;
+			targetProxy = FB3C4A6A2A49C8F60080728E /* PBXContainerItemProxy */;
+		};
+		FB3C4A712A49C8F60080728E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB3C4A5E2A49C8F50080728E /* Network */;
+			targetProxy = FB3C4A702A49C8F60080728E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FB4CEF052A2E299200382E08 /* Main.storyboard */ = {
@@ -355,6 +539,111 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FB3C4A742A49C8F60080728E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TS4DWS8Z33;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RayHsu.Network;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB3C4A752A49C8F60080728E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TS4DWS8Z33;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RayHsu.Network;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB3C4A762A49C8F60080728E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RayHsu.NetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlumberHub.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlumberHub";
+			};
+			name = Debug;
+		};
+		FB3C4A772A49C8F60080728E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = RayHsu.NetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlumberHub.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlumberHub";
+			};
+			name = Release;
+		};
 		FB4CEF0E2A2E299400382E08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE9E86387A9A27F650AE6B9E /* Pods-Demo.debug.xcconfig */;
@@ -533,6 +822,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F3F58496A1A65318B9ED8135 /* Pods-PlumberHub.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -562,6 +852,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 50D7538A4687DA0ACBB3C730 /* Pods-PlumberHub.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -590,6 +881,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FB3C4A782A49C8F60080728E /* Build configuration list for PBXNativeTarget "Network" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3C4A742A49C8F60080728E /* Debug */,
+				FB3C4A752A49C8F60080728E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB3C4A792A49C8F60080728E /* Build configuration list for PBXNativeTarget "NetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3C4A762A49C8F60080728E /* Debug */,
+				FB3C4A772A49C8F60080728E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FB4CEF102A2E299400382E08 /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
